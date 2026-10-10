@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "guildmcp"
+version = "0.1.0"
+description = "stdio MCP server for the local guildai CLI"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.scripts]
+guildmcp = "guildmcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
